@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Midnight Memories - Home</title>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content= "width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Style+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+        <style>
+body {
+  color: #FFF8EA;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://i.pinimg.com/originals/ac/b6/b5/acb6b55685ca718be8bdfb336539281d.gif?fbclid=IwAR2h0h-ayn53F0wHcBzXmXsax2KnToiUsJk3GtO7yaMuA5JT62WAwUrYlAg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #181d29;
+  font-weight: lighter;
+  margin: auto;
+ 
+}
+ 
+body h1 {
+  font-family: 'Lobster Two', cursive;
+  text-align: center;
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #45417e;
+  opacity: .95;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #FFF8EA;
+  font-family: 'Comfortaa', cursive;
+  text-decoration: none;
+  margin: 50px;
+  padding: 14px 20px;
+  text-align: center;
+  
+}
+
+nav ul li a:hover {
+  background: #282552;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #f7f7f7af;
+}
+
+article {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+
+.head {
+  max-width: 480px;
+  background-color: #443c6885;
+  text-align:center;
+  border-radius: 15px;
+  margin: auto;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  color: rgb(241, 240, 240);
+}
+
+.head2 {
+  width: 80%;
+  height: 11rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #a6a6a6;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 8px;
+  font-family: 'Domine', serif;
+}
+
+.head2:hover {
+  background-color:#67387a7a;
+  color: white;
+}
+
+.score {
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: 'Lobster Two', cursive;
+  font-weight: lighter;
+  text-align: right;
+}
+
+.container {
+  max-width: 960px;
+  background-color: #443C68;
+  border-radius: 10px;
+  border: 5px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+  margin-top: 25px;
+  padding: 20px;
+  opacity: .8;
+}
+
+.cell div {
+  height: 130px;
+  border-radius: 4px;
+}
+
+.cell {
+  position: relative;
+  cursor: pointer;
+}
+
+.front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #a6a6a6;
+  background-color: #f2f2f2;
+  transform: rotateY(90deg);
+  border-radius: 5px;
+  background: #282A3A;
+  transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+  backface-visibility: hidden;
+}
+
+.back {
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #a6a6a6;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  background: #282A3A;
+}
+
+
+
+.flip {
+  transform: rotateY(0deg);
+}
+.match {
+  transform: rotateY(0deg);
+}
+
+.show {
+  transform: rotateY(0deg);
+}
+
+
+@media screen and (min-width: 770px) {
+  .head {
+    max-width: 1080px;
+  }
+
+  .container {
+    grid-template-columns: repeat(5, auto);
+    position: relative;
+  }
+
+  .cell div {
+    height: 170px;
+    border-radius: 5px;
+
+  }
+}
+
+.button a {
+  text-decoration-line: none;
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  width: 100%;
+  height: 4rem;
+  text-decoration: none;
+  text-decoration-line: none;
+  width: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color:#407976;
+  margin: auto;
+  margin-top: 20px;
+  border: 2px solid;
+  border-color: rgb(25, 25, 25);
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+  opacity: .70;
+}
+
+.button:hover {
+  background-color: #754be975;
+  font-weight: 500;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.button a:hover {
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+footer {
+   position: fixed;
+   font-size: 15px;
+   bottom: 0;
+   left: 0;
+   height: 40px;
+   width: 100%;
+   text-align: center;
+   font-family: 'Comfortaa', cursive;
+   background-color: #47738f;
+   opacity: .95;
+}
+</style>
+<script>
+  function Play(){
+    var audio = new Audio ('NewRomantics.mp3');
+    audio.play();
+  };
+</script>
+</head>
+
+<body>
+    <header>
+        <br><br>
+        <h1>Midnight Memories with Taylor Swift</h1>
+        
+        </header>
+        <div class="button"><a href="game.html">Play the Game</a></div>
+        <div class="button"><a href="about.html">About Us</a></div>
+        <div class="button"><a href="tips.html">Tips and Tricks</a></div>
+        <div class="button"><a href="#" onclick="Play()">Welcome</a></div>
+
+       
+        <footer>
+            <p>Copyright @ 2023 | Group 8 - Concepcion, Dizon, Paz | 9-Balingkilat CS3 | 3rd Quarter Project | All Rights Reserved.</p>
+          </footer>
+         
+</body>
+</html>
